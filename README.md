@@ -62,12 +62,12 @@ export declare global {
 
 <script>
     window.selTicket = {
-        applicationId: APPLICATION_ID,
-        token: TOKEN,
+        applicationId: 'APPLICATION_ID',
+        token: 'TOKEN',
         onClose: () => window.history.back(),
     }
 </script>
-<script type="text/javascript" src="SCRIPT_LINK" />
+<script type="text/javascript" src="SCRIPT_LINK" ></script>
 ```
 
 ### React
