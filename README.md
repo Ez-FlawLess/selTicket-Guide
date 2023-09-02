@@ -89,27 +89,27 @@ window.mountSelTicketWidget()
 در useEffect صفحه ای که ویجت لود می شود. اسکریپت را اضافه کنید.
 
 ```typescript
-    useEffect(() => {
-        window.selTicket = {
-            applicationId: APPLICATION_ID,
-            token: TOKEN,
-            onClose: () => {
-                // Handle going back with router
-            },
-        }
+useEffect(() => {
+    window.selTicket = {
+        applicationId: APPLICATION_ID,
+        token: TOKEN,
+        onClose: () => {
+            // Handle going back with router
+        },
+    }
 
-        const script = document.createElement('script');
-        script.id = "selticket-script"
-        script.type = 'text/javascript';
-        script.src = 'SCRIPT_LINK';    
+    const script = document.createElement('script');
+    script.id = "selticket-script"
+    script.type = 'text/javascript';
+    script.src = 'SCRIPT_LINK';    
 
-        if (!document.head.contains(script)) document.head.appendChild(script);
-        else window.mountSelTicketWidget()
-    }, [])
+    if (!document.head.contains(script)) document.head.appendChild(script);
+    else window.mountSelTicketWidget()
+}, [])
 
-    return (
-        <div id="selticket" />
-    )
+return (
+    <div id="selticket" />
+)
 ```
 
 ### شخصی سازی
