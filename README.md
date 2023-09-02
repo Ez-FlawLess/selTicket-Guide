@@ -119,9 +119,9 @@ return (
 ```css
 #selticket {
   --selticket-primary-color: ******;
-  --selticket-primary-color-container: ******;;
-  --selticket-secondary-color: ******;;
-  --selticket-secondary-color-container: ******;;
+  --selticket-primary-color-container: ******;
+  --selticket-secondary-color: ******;
+  --selticket-secondary-color-container: ******;
   --selticket-accent-color: ******;
   --selticket-accent-color-container: ******;
   --selticket-on-primary-color: ******;
